@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
-function Index({ stars }) {
+function Index({ stars, message }) {
   return (
     <div>
+      <h2>{message}</h2>
       <p>Next.js has {stars} ⭐️</p>
       <Link href="/preact-stars">
         <a>How about preact?</a>
@@ -18,6 +19,7 @@ export async function getStaticProps() {
   return {
     props: {
       stars: json.stargazers_count,
+      message: "This is a message put in by the props"
     },
   }
 }
