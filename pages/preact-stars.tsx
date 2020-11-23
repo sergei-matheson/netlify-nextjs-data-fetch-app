@@ -12,8 +12,9 @@ const PreactStars: FC<PreactProps> = ({ stars }) => {
     <div>
       <p>Preact has {stars} ⭐</p>
       <Link href="/">
-        <a>I bet Next.js has more stars (?)</a>
+        <a>I bet Next.js has more stars.</a>
       </Link>
+      <p>Here is some more text.</p>
     </div>
   )
 }
