@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "postbuild": "next-on-netlify",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "ci": "CI=true yarn test --coverage"
   },
   "dependencies": {
     "next": "latest",
